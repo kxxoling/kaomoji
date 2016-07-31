@@ -16,9 +16,10 @@ import jp from '../data/jp.json';
 import nimingban from '../data/nimingban.json';
 import plum from '../data/plum.json';
 import yashi from '../data/yashi.json';
+import kxxoling from '../data/kxxoling.json';
 
 const emojiList = [
-  kt, ktc, plum, jp, nimingban, yashi,
+  kt, ktc, plum, jp, nimingban, yashi, kxxoling,
 ];
 const emoji = emojiList[0];
 
