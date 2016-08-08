@@ -7,6 +7,7 @@
   "scripts": {
     "dev": "node build/dev-server.js",
     "build": "node build/build.js",
+    "deploy": "git push --delete origin gh-pages; git checkout -b tmp; npm run build; git add dist -f; git commit -m \"make dist\"; git subtree push --prefix dist origin gh-pages; git checkout master; git branch -D tmp",
     "unit": "karma start test/unit/karma.conf.js --single-run",
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
