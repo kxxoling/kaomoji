@@ -1,40 +1,57 @@
 <template lang="jade">
-#app
-  .category(v-for="cate in emoji.categories")
-    .name
-      | {{e.name}}
-    .entries(v-for="e in cate.entries")
-      card(:description="e.description", :emoticon="e.emoticon")
+.app
+  sidebar.left-bar(:sources="emojiSources")
+  router-view.route-view(:emoji-sources="emojiSources")
 
 </template>
 
 <script>
-import Card from './components/Card';
+import Sidebar from 'components/Sidebar';
+
 import ktc from '../data/ktc.json';
 import kt from '../data/kt.json';
 import jp from '../data/jp.json';
 import nimingban from '../data/nimingban.json';
-import plum from '../data/plum.json';
 import yashi from '../data/yashi.json';
 import kxxoling from '../data/kxxoling.json';
 
-const emojiList = [
-  kt, ktc, plum, jp, nimingban, yashi, kxxoling,
-];
-const emoji = emojiList[0];
+const emojiSources = {
+  kt, ktc, jp, yashi, kxxoling, nimingban,
+};
 
 export default {
+  replace: false,
   data() {
     return {
-      emoji,
+      emojiSources,
     };
   },
+
   components: {
-    Card,
+    Sidebar,
   },
 };
 </script>
 
 <style lang="stylus">
+@require '~normalize.css/normalize.css'
 
+li
+  list-style-type none
+a
+  text-decoration none
+
+html, body, .app
+  width 100%
+  height 100%
+.app
+  display flex
+
+  .left-bar
+    width 240px
+
+  .route-view
+    flex 1
+    height 100%
+    overflow auto
 </style>

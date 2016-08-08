@@ -1,10 +1,10 @@
 {
   "categories": [
     {
-      "name": "Trending on Google+",
+      "name": "G+ Trending",
       "entries": [
         {
-          "emoticon": "(*\u2022\u0300\u1d17\u2022\u0301 *)\u0648 \u0311\u0311\ufeff", 
+          "emoticon": "(*\u2022\u0300\u1d17\u2022\u0301 *)\u0648 \u0311\u0311\ufeff",
           "description": null
         },
         {
@@ -42,7 +42,7 @@
       ]
     },
     {
-      "name": "\u10da",
+      "name": "",
       "entries": [
         {
           "emoticon": "\u10da(\u2579\u25e1\u2579\u10da)",
@@ -67,7 +67,7 @@
       ]
     },
     {
-      "name": "\u256e",
+      "name": "",
       "entries": [
         {
           "emoticon": "\u256e(\uffe3\u25bd\uffe3\")\u256d",
@@ -104,7 +104,7 @@
       ]
     },
     {
-      "name": "\u03c9",
+      "name": "",
       "entries": [
         {
           "emoticon": "=\u03c9=",
@@ -165,7 +165,7 @@
       ]
     },
     {
-      "name": "\u053e",
+      "name": "",
       "entries": [
         {
           "emoticon": ",,\u053e\u2038\u053e,,",

@@ -1,7 +1,7 @@
 {
   "categories": [
     {
-      "name": "jp",
+      "name": "Angry",
       "entries": [
         {
           "emoticon": "( \u2267\u0414\u2266)",
@@ -542,7 +542,7 @@
       ]
     },
     {
-      "name": "jp",
+      "name": "Apologizing",
       "entries": [
         {
           "emoticon": "\uff4d\uff08\uff3f\u3000\uff3f\uff1b\uff1b\uff4d",
@@ -587,7 +587,7 @@
       ]
     },
     {
-      "name": "jp",
+      "name": "Bears",
       "entries": [
         {
           "emoticon": "\u201c(`(\u30a8)\u00b4)\u30ce",
@@ -1016,7 +1016,7 @@
       ]
     },
     {
-      "name": "jp",
+      "name": "Birds",
       "entries": [
         {
           "emoticon": "\uff08\u30fb\u229d\u30fb\uff09",
@@ -1097,7 +1097,7 @@
       ]
     },
     {
-      "name": "jp",
+      "name": "Cats",
       "entries": [
         {
           "emoticon": "\uff08\u03a6\u03c9\u03a6\uff09",
@@ -1462,7 +1462,7 @@
       ]
     },
     {
-      "name": "jp",
+      "name": "Characters",
       "entries": [
         {
           "emoticon": "\u30fd\u0f3c \u0ca0\u76ca\u0ca0 \u0f3d\uff89",
@@ -1623,7 +1623,7 @@
       ]
     },
     {
-      "name": "jp",
+      "name": "Clouds",
       "entries": [
         {
           "emoticon": "\u02de\u035b\ua4b0\u0e51\u0900 \u2022\u0306\ua20a\u0352\u0942\u2022\u0306\u0e51\u0900\ua4b1",
@@ -1848,7 +1848,7 @@
       ]
     },
     {
-      "name": "jp",
+      "name": "Confused",
       "entries": [
         {
           "emoticon": "(\u309c-\u309c)",
@@ -2121,7 +2121,7 @@
       ]
     },
     {
-      "name": "jp",
+      "name": "Crazy",
       "entries": [
         {
           "emoticon": "\u30d8\uff08\u3002\u25a1\u00b0\uff09\u30d8",
@@ -2254,7 +2254,7 @@
       ]
     },
     {
-      "name": "jp",
+      "name": "Dancing",
       "entries": [
         {
           "emoticon": "(/\u30fb\u30fb)\u30ce",
@@ -2643,7 +2643,7 @@
       ]
     },
     {
-      "name": "jp",
+      "name": "Dead",
       "entries": [
         {
           "emoticon": "(\u2716\u256d\u256e\u2716)",
@@ -2748,7 +2748,7 @@
       ]
     },
     {
-      "name": "jp",
+      "name": "Dogs",
       "entries": [
         {
           "emoticon": "(^\u30fb(I)\u30fb^)",
@@ -2869,7 +2869,7 @@
       ]
     },
     {
-      "name": "jp",
+      "name": "Evil",
       "entries": [
         {
           "emoticon": "\u201c\u03c8(\uff40\u2207\u00b4)\u03c8",
@@ -3022,7 +3022,7 @@
       ]
     },
     {
-      "name": "jp",
+      "name": "Excited",
       "entries": [
         {
           "emoticon": "(((o(*\uff9f\u25bd\uff9f*)o)))",
@@ -3235,7 +3235,7 @@
       ]
     },
     {
-      "name": "jp",
+      "name": "Sea",
       "entries": [
         {
           "emoticon": "\u30df\uff0e\uff0e\u30df",
@@ -3324,7 +3324,7 @@
       ]
     },
     {
-      "name": "jp",
+      "name": "Food&Drink",
       "entries": [
         {
           "emoticon": "( -_-)\u65e6~",
@@ -3401,7 +3401,7 @@
       ]
     },
     {
-      "name": "jp",
+      "name": "Friends",
       "entries": [
         {
           "emoticon": "( \u3002\u30fb_\u30fb\u3002)\u4eba(\u3002\u30fb_\u30fb\u3002 )",
@@ -3618,7 +3618,7 @@
       ]
     },
     {
-      "name": "jp",
+      "name": "Giving Up",
       "entries": [
         {
           "emoticon": "(;-_-)/",
@@ -3783,7 +3783,7 @@
       ]
     },
     {
-      "name": "jp",
+      "name": "Happy",
       "entries": [
         {
           "emoticon": "( \u00b4 \u25bd ` )\uff89",
@@ -4796,7 +4796,7 @@
       ]
     },
     {
-      "name": "jp",
+      "name": "Hiding",
       "entries": [
         {
           "emoticon": "(\u2283\u203f\u2282)",
@@ -4853,7 +4853,7 @@
       ]
     },
     {
-      "name": "jp",
+      "name": "Holidays",
       "entries": [
         {
           "emoticon": "\u1484\u208d\u207d\u02c6\u2070\u02c6\u207e\u208e\u1483\u266a\u266c",
@@ -4886,7 +4886,7 @@
       ]
     },
     {
-      "name": "jp",
+      "name": "Hugging",
       "entries": [
         {
           "emoticon": "\u2282((\u30fb\u25bd\u30fb))\u2283",
@@ -4935,7 +4935,7 @@
       ]
     },
     {
-      "name": "jp",
+      "name": "Hurt",
       "entries": [
         {
           "emoticon": "\u30d8\uff08\u3002\u25a1\u00b0\uff09\u30d8",
@@ -5000,7 +5000,7 @@
       ]
     },
     {
-      "name": "jp",
+      "name": "Kissing",
       "entries": [
         {
           "emoticon": "(\u256f3\u2570)",
@@ -5205,7 +5205,7 @@
       ]
     },
     {
-      "name": "jp",
+      "name": "Laughing",
       "entries": [
         {
           "emoticon": "(*\u00b4\u8278`*)",
@@ -5322,7 +5322,7 @@
       ]
     },
     {
-      "name": "jp",
+      "name": "Love",
       "entries": [
         {
           "emoticon": "( c//\u201d-}{-*\\x)",
@@ -5755,7 +5755,7 @@
       ]
     },
     {
-      "name": "jp",
+      "name": "Meh",
       "entries": [
         {
           "emoticon": "\u00af\\_(\u30c4)_/\u00af",
@@ -5944,7 +5944,7 @@
       ]
     },
     {
-      "name": "jp",
+      "name": "Monkeys",
       "entries": [
         {
           "emoticon": "((\u0e51\u2727\ua20a\u2727\u0e51))",
@@ -7853,7 +7853,7 @@
           "description": "Sad"
         },
         {
-          "emoticon": "(\uff9f\u00b4\u0414\uff40\uff9f)\uff9f", 
+          "emoticon": "(\uff9f\u00b4\u0414\uff40\uff9f)\uff9f",
           "description": "Sad"
         },
         {

@@ -1,0 +1,87 @@
+<template lang="jade">
+.sidebar
+  figure.avatar
+    img(src="https://avatars0.githubusercontent.com/u/1227139")
+    figcaption Click to copy!
+
+  ul.sources
+    li.source(v-for="key in keys")
+      a(v-link="{ name: 'emoticons', params: { source: key, category: 0 }}") {{ key }}
+</template>
+
+<script>
+export default {
+  props: {
+    sources: Object,
+    default() {
+      return {};
+    },
+  },
+  computed: {
+    keys() {
+      return Object.keys(this.sources);
+    },
+  },
+  data() {
+    return {
+    };
+  },
+  components: {
+  },
+};
+</script>
+
+<style lang="stylus">
+$avatar-width = 160
+$avatar-border-width = 10
+$avatar-border-radius = ($avatar-width) / 2 + $avatar-border-width
+
+.sidebar
+  background-color #1c3049
+  min-height 720px
+  overflow auto
+
+.avatar
+  width 100%
+  padding 0
+  margin 0
+  margin-bottom 30px
+  padding-top 60px
+
+  img
+    height $avatar-width px
+    width auto
+    border-radius $avatar-border-radius px
+    border ($avatar-border-width)px solid rgba(200, 200, 200, .5)
+    display block
+    margin-left auto
+    margin-right auto
+
+  figcaption
+    color #ccc
+    font-size 22px
+    line-height 36px
+    text-align center
+
+.sources
+  padding 0
+  line-height 52px
+
+  .source
+    border-top 1px solid rgba(200, 200, 200, 0.7)
+
+    &:last-child
+      border-bottom 1px solid #555
+
+    a
+      display block
+      width 100%
+      color #aaa
+      font-weight bold
+      text-indent 36px
+
+      &:hover
+        color #ccc
+        background-color #101b28
+        cursor pointer
+</style>
