@@ -7,9 +7,14 @@
   ul.sources
     li.source(v-for="key in keys")
       a(v-link="{ name: 'emoticons', params: { source: key, category: 0 }}") {{ key }}
+
+  .github-container
+    github.github
 </template>
 
 <script>
+import Github from 'components/Github';
+
 export default {
   props: {
     sources: Object,
@@ -27,6 +32,7 @@ export default {
     };
   },
   components: {
+    Github,
   },
 };
 </script>
@@ -40,6 +46,8 @@ $avatar-border-radius = ($avatar-width) / 2 + $avatar-border-width
   background-color #1c3049
   min-height 720px
   overflow auto
+  display flex
+  flex-direction column
 
 .avatar
   width 100%
@@ -66,6 +74,8 @@ $avatar-border-radius = ($avatar-width) / 2 + $avatar-border-width
 .sources
   padding 0
   line-height 52px
+  width 100%
+  flex-start top
 
   .source
     border-top 1px solid rgba(200, 200, 200, 0.7)
@@ -84,4 +94,14 @@ $avatar-border-radius = ($avatar-width) / 2 + $avatar-border-width
         color #ccc
         background-color #101b28
         cursor pointer
+
+.github-container
+  width 240px
+  position absolute
+  bottom 30px
+
+  .github
+    margin-left auto
+    margin-right auto
+
 </style>
