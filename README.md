@@ -16,7 +16,7 @@ npm run build
 
 # push to GitHub pages
 
-git push --delete origin gh-pages; git checkout -b tmp; npm run build; git add dist -f; git commit -m "make dist"; git subtree push --prefix dist origin gh-pages; git checkout master; git branch -D tmp
+npm run deploy
 
 # run unit tests
 npm run unit
