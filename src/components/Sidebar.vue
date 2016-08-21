@@ -41,6 +41,7 @@ export default {
 $avatar-width = 160
 $avatar-border-width = 10
 $avatar-border-radius = ($avatar-width) / 2 + $avatar-border-width
+$source-border = 2px solid rgba(200, 200, 200, 0.7)
 
 .sidebar
   background-color #1c3049
@@ -78,10 +79,10 @@ $avatar-border-radius = ($avatar-width) / 2 + $avatar-border-width
   flex-start top
 
   .source
-    border-top 1px solid rgba(200, 200, 200, 0.7)
+    border-top $source-border
 
     &:last-child
-      border-bottom 1px solid #555
+      border-bottom $source-border
 
     a
       display block
