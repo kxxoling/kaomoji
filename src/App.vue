@@ -16,7 +16,12 @@ import yashi from '../data/yashi.json';
 import kxxoling from '../data/kxxoling.json';
 
 const emojiSources = {
-  kt, ktc, jp, yashi, kxxoling, nimingban,
+  'KT 颜文字': kt,
+  'KT 颜文字（2）': ktc,
+  'Japanese Kaomoji': jp,
+  神乐版雅诗: yashi,
+  'A 岛匿名版': nimingban,
+  kxxoling,
 };
 
 export default {
