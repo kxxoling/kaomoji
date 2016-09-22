@@ -2,7 +2,7 @@
 .emoji(@click="copyToClipboard(emoticon)")
   .description {{description}}
   .emoticon
-    pre(onClick="javascript:this.select();") {{emoticon}}
+    pre {{emoticon}}
 </template>
 
 <script>
