@@ -2,12 +2,19 @@
 .app
   sidebar.left-bar(:sources="emojiSources")
   router-view.route-view(:emoji-sources="emojiSources")
+  .notifications
+    notification(
+      v-for="n in notifications",
+      :title="n.title",
+      :message="n.message",
+      :type="n.type",
+      :duration="n.duration")
 
 </template>
 
 <script>
 import Sidebar from 'components/Sidebar';
-
+import Notification from 'components/Notification';
 import ktc from '../data/ktc.json';
 import kt from '../data/kt.json';
 import jp from '../data/jp.json';
@@ -24,22 +31,36 @@ const emojiSources = {
   kxxoling,
 };
 
+
 export default {
   replace: false,
   data() {
     return {
       emojiSources,
+      notifications: [],
     };
+  },
+  methods: {
+    success(kaomoji) {
+      const notification = {
+        title: 'Successfully copied!',
+        message: kaomoji,
+        type: 'success',
+        duration: 3000,
+      };
+      this.notifications.push(notification);
+    },
   },
 
   components: {
-    Sidebar,
+    Sidebar, Notification,
   },
 };
 </script>
 
 <style lang="stylus">
 @require '~normalize.css/normalize.css'
+@require '~font-awesome/css/font-awesome.css'
 
 li
   list-style-type none

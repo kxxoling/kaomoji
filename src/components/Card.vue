@@ -21,6 +21,7 @@ export default {
     copyToClipboard() {
       this.selectNode();
       document.execCommand('copy');
+      this.$root.success(this.emoticon);
     },
     selectNode() {
       const node = this.$el.getElementsByClassName('emoticon')[0];
