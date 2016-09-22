@@ -21,6 +21,7 @@ import jp from '../data/jp.json';
 import nimingban from '../data/nimingban.json';
 import yashi from '../data/yashi.json';
 import kxxoling from '../data/kxxoling.json';
+import '!vue-style!css!../node_modules/font-awesome/css/font-awesome.css';
 
 const emojiSources = {
   'KT 颜文字': kt,
@@ -60,7 +61,6 @@ export default {
 
 <style lang="stylus">
 @require '~normalize.css/normalize.css'
-@require '~font-awesome/css/font-awesome.css'
 
 li
   list-style-type none
