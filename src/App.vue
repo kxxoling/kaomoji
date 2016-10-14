@@ -13,6 +13,7 @@
 </template>
 
 <script>
+import '!vue-style!css!../node_modules/font-awesome/css/font-awesome.css';
 import Sidebar from 'components/Sidebar';
 import Notification from 'components/Notification';
 import ktc from '../data/ktc.json';
@@ -21,7 +22,6 @@ import jp from '../data/jp.json';
 import nimingban from '../data/nimingban.json';
 import yashi from '../data/yashi.json';
 import kxxoling from '../data/kxxoling.json';
-import '!vue-style!css!../node_modules/font-awesome/css/font-awesome.css';
 
 const emojiSources = {
   'KT 颜文字': kt,
