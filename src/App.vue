@@ -32,9 +32,7 @@ const emojiSources = {
   kxxoling,
 };
 
-
 export default {
-  replace: false,
   data() {
     return {
       emojiSources,

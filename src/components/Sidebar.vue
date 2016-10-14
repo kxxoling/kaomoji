@@ -6,7 +6,7 @@
 
   ul.sources
     li.source(v-for="key in keys")
-      a(v-link="{ name: 'emoticons', params: { source: key, category: 0 }}") {{ key }}
+      router-link(:to="{ name: 'emoticons', params: { source: key, category: 0 }}") {{ key }}
 
   .github-container
     github.github

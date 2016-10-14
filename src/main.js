@@ -6,6 +6,10 @@ import urls from 'src/urls';
 
 Vue.use(VueRouter);
 
-const router = new VueRouter();
-router.map(urls);
-router.start(App, 'body');
+const router = new VueRouter({ routes: urls });
+
+export default new Vue({
+  el: 'app',
+  router,
+  render: h => h(App),
+});

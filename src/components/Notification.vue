@@ -17,21 +17,33 @@
 <script>
 export default {
   props: {
-    title: '',
-    message: '',
-    duration: 3000,
-    type: 'info',
-    callback: null,
+    title: String,
+    message: String,
+    duration: {
+      type: Number,
+      default: 3000,
+    },
+    type: {
+      type: String,
+      default: 'success',
+    },
+    callback: Function,
 
-    closed: false,
-    top: null,
-    timer: null,
+    top: Number,
+  },
+
+  data() {
+    return {
+      closed: false,
+      timer: null,
+    };
   },
 
   watch: {
     closed(newVal) {
       if (newVal) {
-        this.$destroy(true);
+        this.$el.remove();
+        this.$destroy();
       }
     },
   },
@@ -59,7 +71,7 @@ export default {
     },
   },
 
-  ready() {
+  mounted() {
     if (this.duration > 0) {
       this.timer = setTimeout(() => {
         if (!this.closed) {

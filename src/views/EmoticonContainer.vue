@@ -1,9 +1,9 @@
 <template lang="jade">
 .emoticon-container
   .title-container
-    a(
-      v-for="cate in source.categories",
-      v-link="{ name: 'emoticons', params: { source: $route.params.source, category: $index }}",
+    router-link(
+      v-for="(cate, index) in source.categories",
+      :to="{ name: 'emoticons', params: { source: $route.params.source, category: index }}",
     ).tag {{ cate.name || '[ ]' }}
   .category
     .entry(v-for="e in emoji.entries")
