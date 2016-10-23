@@ -1,5 +1,5 @@
 <template lang="jade">
-.emoji(@click="copyToClipboard(emoticon)")
+.kaomoji(@click="copyToClipboard(emoticon)")
   .description {{description}}
   .emoticon
     pre {{emoticon}}
@@ -35,7 +35,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style  lang="stylus" scoped>
-.emoji
+.kaomoji
   color #42b983
   border 1px solid #ddd
   padding 20px

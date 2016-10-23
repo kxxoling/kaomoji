@@ -6,7 +6,7 @@
       :to="{ name: 'emoticons', params: { source: $route.params.source, category: index }}",
     ).tag {{ cate.name || '[ ]' }}
   .category
-    .entry(v-for="e in emoji.entries")
+    .entry(v-for="e in kaomoji.entries")
       card.card(:description="e.description", :emoticon="e.emoticon")
 </template>
 
@@ -15,18 +15,18 @@ import Card from 'components/Card';
 
 export default {
   props: {
-    emojiSources: {
+    kaomojiSources: {
       required: true,
     },
   },
   computed: {
     source() {
       const { source } = this.$route.params;
-      return this.emojiSources[source];
+      return this.kaomojiSources[source];
     },
-    emoji() {
+    kaomoji() {
       const { category, source } = this.$route.params;
-      return this.emojiSources[source].categories[category];
+      return this.kaomojiSources[source].categories[category];
     },
   },
   components: {

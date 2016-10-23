@@ -1,7 +1,7 @@
 <template lang="jade">
 .app
-  sidebar.left-bar(:sources="emojiSources")
-  router-view.route-view(:emoji-sources="emojiSources")
+  sidebar.left-bar(:sources="kaomojiSources")
+  router-view.route-view(:kaomoji-sources="kaomojiSources")
   .notifications
     notification(
       v-for="n in notifications",
@@ -23,7 +23,7 @@ import nimingban from '../data/nimingban.json';
 import yashi from '../data/yashi.json';
 import kxxoling from '../data/kxxoling.json';
 
-const emojiSources = {
+const kaomojiSources = {
   'KT 颜文字': kt,
   'KT 颜文字（2）': ktc,
   'Japanese Kaomoji': jp,
@@ -35,7 +35,7 @@ const emojiSources = {
 export default {
   data() {
     return {
-      emojiSources,
+      kaomojiSources,
       notifications: [],
     };
   },

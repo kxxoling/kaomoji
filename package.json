@@ -1,7 +1,7 @@
 {
-  "name": "emoji",
+  "name": "kaomoji",
   "version": "1.0.0",
-  "description": "Get your favorite emoji online!",
+  "description": "Get your favorite kaomoji online!",
   "author": "kxxoling <kxxoling@gmail.com>",
   "private": true,
   "scripts": {

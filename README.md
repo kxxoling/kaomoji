@@ -1,6 +1,6 @@
-# emoji
+# Kaomoji
 
-> Get your favorite emoji online!
+> Get your favorite kaomoji online!
 
 ## Develop
 
