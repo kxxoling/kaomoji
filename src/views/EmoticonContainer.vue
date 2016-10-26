@@ -4,6 +4,7 @@
     router-link(
       v-for="(cate, index) in source.categories",
       :to="{ name: 'emoticons', params: { source: $route.params.source, category: index }}",
+      v-bind:class="{ active: index == $route.params.category}",
     ).tag {{ cate.name || '[ ]' }}
   .category
     .entry(v-for="e in kaomoji.entries")
@@ -57,6 +58,10 @@ export default {
 
       &:hover
         background-color #dfdfdf
+
+      &.active
+        background-color #dfdfdf
+        box-shadow 0px 0px 10px #dfdfdf
 
   .category
     display flex

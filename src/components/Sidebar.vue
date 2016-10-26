@@ -6,7 +6,9 @@
 
   ul.sources
     li.source(v-for="key in keys")
-      router-link(:to="{ name: 'emoticons', params: { source: key, category: 0 }}") {{ key }}
+      router-link(:to="{ name: 'emoticons', params: { source: key, category: 0 }}"
+      v-bind:class="{ active: key == $route.params.source }"
+      ) {{ key }}
 
   .github-container
     github.github
@@ -42,9 +44,11 @@ $avatar-width = 160
 $avatar-border-width = 10
 $avatar-border-radius = ($avatar-width) / 2 + $avatar-border-width
 $source-border = 2px solid rgba(200, 200, 200, 0.7)
+$dark-blue = #101b28
+$blue = #1c3049
 
 .sidebar
-  background-color #1c3049
+  background-color $blue
   min-height 720px
   overflow auto
   display flex
@@ -84,6 +88,10 @@ $source-border = 2px solid rgba(200, 200, 200, 0.7)
     &:last-child
       border-bottom $source-border
 
+    .active
+      color #fff
+      background-color $dark-blue
+
     a
       display block
       width 100%
@@ -93,7 +101,7 @@ $source-border = 2px solid rgba(200, 200, 200, 0.7)
 
       &:hover
         color #ccc
-        background-color #101b28
+        background-color $dark-blue
         cursor pointer
 
 .github-container
