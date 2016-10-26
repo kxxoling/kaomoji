@@ -59,7 +59,7 @@ $source-border = 2px solid rgba(200, 200, 200, 0.7)
 
   img
     height $avatar-width px
-    width auto
+    width $avatar-width px
     border-radius $avatar-border-radius px
     border ($avatar-border-width)px solid rgba(200, 200, 200, .5)
     display block
