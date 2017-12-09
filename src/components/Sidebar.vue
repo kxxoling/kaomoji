@@ -1,4 +1,4 @@
-<template lang="jade">
+<template lang="pug">
 .sidebar
   figure.avatar
     img(src="https://avatars0.githubusercontent.com/u/1227139")

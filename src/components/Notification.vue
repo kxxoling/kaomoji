@@ -1,4 +1,4 @@
-<template lang="jade">
+<template lang="pug">
 .notification(
   transition='fade',
   :style="{ top: top ? top + 'px' : 'auto' }",

@@ -1,4 +1,4 @@
-<template lang="jade">
+<template lang="pug">
 .app
   sidebar.left-bar(:sources="kaomojiSources")
   router-view.route-view(:kaomoji-sources="kaomojiSources")

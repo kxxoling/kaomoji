@@ -1,4 +1,4 @@
-<template lang="jade">
+<template lang="pug">
 .kaomoji(v-bind:data-clipboard-text="emoticon")
   .description {{description}}
   .emoticon

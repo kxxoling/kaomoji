@@ -1,4 +1,4 @@
-<template lang="jade">
+<template lang="pug">
 .emoticon-container
   .title-container
     router-link(
