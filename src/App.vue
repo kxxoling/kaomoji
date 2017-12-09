@@ -13,9 +13,9 @@
 </template>
 
 <script>
-import '!vue-style!css!../node_modules/font-awesome/css/font-awesome.css';
 import Sidebar from 'components/Sidebar';
 import Notification from 'components/Notification';
+import '../node_modules/font-awesome/css/font-awesome.css';
 import ktc from '../data/ktc.json';
 import kt from '../data/kt.json';
 import jp from '../data/jp.json';
