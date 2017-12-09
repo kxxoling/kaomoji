@@ -1,11 +1,13 @@
 <template lang="jade">
-.kaomoji(@click="copyToClipboard(emoticon)")
+.kaomoji(v-bind:data-clipboard-text="emoticon")
   .description {{description}}
   .emoticon
     pre {{emoticon}}
 </template>
 
 <script>
+import Clipboard from 'clipboard';
+
 export default {
   props: {
     description: {
@@ -17,18 +19,15 @@ export default {
       required: true,
     },
   },
-  methods: {
-    copyToClipboard() {
-      this.selectNode();
-      document.execCommand('copy');
-      this.$parent.$parent.success(this.emoticon);
-    },
-    selectNode() {
-      const node = this.$el.getElementsByClassName('emoticon')[0];
-      const range = document.createRange();
-      range.selectNode(node);
-      window.getSelection().addRange(range);
-    },
+  mounted() {
+    this.clipboard = new Clipboard(this.$el);
+    this.clipboard.on('success', (e) => {
+      e.clearSelection();
+      this.$parent.$parent.success(e.text);
+    });
+
+    this.clipboard.on('error', () => {
+    });
   },
 };
 </script>

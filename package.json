@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "babel-runtime": "^6.0.0",
-    "clipboard": "^1.5.12",
+    "clipboard": "^1.7.1",
     "font-awesome": "^4.6.3",
     "normalize.css": "^5.0.0",
     "vue": "^2.0.0",
